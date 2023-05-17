@@ -3,7 +3,15 @@
     --azul: #0B5563;
     --azul-claro:#34b5aa;
     --negro:#9ccf31;
+    --blanco: #fff;
 }
+.titulo{
+    color: var(--azul-claro);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .nav-bg {
     background-color: var(--negro);
     padding: 1rem;
@@ -18,6 +26,9 @@
 }
 
 /*Catalogo*/
+.portafolio{
+    background: var(--amarillo);
+}
 .galeria-port{
     display: flex;
     justify-content: space-evenly;
@@ -46,7 +57,7 @@
     height: 100%;
     top: 0%;
     transform: scale(0);
-    background: hsla(273,91%,27%, 0.7);
+    background: var(--azul);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -64,4 +75,49 @@
 
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
+}
+
+/*Formulario*/
+.formulario fieldset{
+    border: none;
+
+}
+
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto; /* margin siempre se va a utilizar cuado tenga elementos de tipo formulario */
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.campos{
+    margin-bottom: 1rem;
+}
+
+.campos label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    flex: block;
+
+}
+.text{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
 }
