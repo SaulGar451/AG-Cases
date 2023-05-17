@@ -1,0 +1,19 @@
+:root{ 
+    --amarillo: #ecbe14 ;
+    --azul: #0B5563;
+    --azul-claro:#34b5aa;
+    --negro:#9ccf31;
+}
+
+.nav-bg {
+    background-color: var(--negro);
+    padding: 1rem;
+}
+
+.navbar{
+    background-color: var(--negro);  
+    display:flex; 
+    justify-content: column;
+    justify-content: space-around;
+    align-items: center;
+}
