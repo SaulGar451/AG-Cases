@@ -5,37 +5,58 @@
     --negro:#9ccf31;
     --blanco: #fff;
 }
+
+html{
+    font-size: 66.5%;
+
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+
 .titulo{
     color: var(--blanco);
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
     background-color: var(--azul);
-
+    border-radius: .5rem;
 }
 
+nav{
+    background-color: var(--amarillo);
+}
+/* 
 .nav-bg {
-    background-color: var(--negro);
+    background-color: var(--amarillo);
     padding: 1rem;
+    padding-top: 1px;
 }
 
 .navbar{
-    background-color: var(--negro);  
-    display:flex; 
-    align-items: row;
-    flex-direction: row;
-    justify-content: center;
+    background-color: var(--amarillo);
+    display: flex; 
+    justify-content: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a:hover{
+    background-color: var(--negro);
 }
 
 nav li{
     list-style: none;
     text-align: center;
+    color: black;
 }
 
 nav ul li{
     display: inline-block;
-    padding: 20px;
-}
+    padding: 3px;
+} */
 
 /*Catalogo*/
 .portafolio{
@@ -132,4 +153,62 @@ nav ul li{
 
 .boton:hover{
     cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    background: var(--azul-claro);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden; 
+    justify-content: stretch;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%; 
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+    font-size: 30px;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid var(--azul);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.content-foo p{
+    color: black;
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: 9e9797;
+}
+
+h2{
+    font-size: 25px;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
 }
