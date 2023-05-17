@@ -6,10 +6,12 @@
     --blanco: #fff;
 }
 .titulo{
-    color: var(--azul-claro);
+    color: var(--blanco);
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    background-color: var(--azul);
+
 }
 
 .nav-bg {
@@ -20,9 +22,19 @@
 .navbar{
     background-color: var(--negro);  
     display:flex; 
-    justify-content: column;
-    justify-content: space-around;
-    align-items: center;
+    align-items: row;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
 }
 
 /*Catalogo*/
